@@ -82,6 +82,10 @@ p#freedom {
         transform: translateY(30px);
     }
 
+    .cbn {
+        transform: translateX(50px);
+    }
+
     #freebank {
         font-size: 35px;
         line-height: 35.2px;
@@ -107,7 +111,7 @@ p#freedom {
     }
 
     #getKudagetKuda {
-        transform: translate(70px,25px);
+        transform: translate(60px,25px);
     }
     #imagebank {
         margin-left: 0px;

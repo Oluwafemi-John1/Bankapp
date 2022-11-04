@@ -99,6 +99,7 @@ nav {
 
     html {
         overflow-x: hidden;
+        scroll-behavior: smooth;
     }
 }		
 /* ============ desktop view .end// ============ */

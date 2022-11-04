@@ -22,11 +22,11 @@ const Navbar = () => {
                             <li className="nav-item dropdown px-1">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Features</a>
                                 <ul className="dropdown-menu border-0 shadow-sm">
-                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>credit_card</i>&nbsp;&nbsp;&nbsp;Nova Card</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>payments</i>&nbsp;&nbsp;&nbsp;Spend</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>savings</i>&nbsp;&nbsp;&nbsp;Save</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>add_card</i>&nbsp;&nbsp;&nbsp;Budget</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>attach_money</i>&nbsp;&nbsp;&nbsp;Borrow</Link></li>
+                                    <li className='py-1'><Link to="/card" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>credit_card</i>&nbsp;&nbsp;&nbsp;Nova Card</Link></li>
+                                    <li className='py-1'><Link to="/spend" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>payments</i>&nbsp;&nbsp;&nbsp;Spend</Link></li>
+                                    <li className='py-1'><Link to="/save" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>savings</i>&nbsp;&nbsp;&nbsp;Save</Link></li>
+                                    <li className='py-1'><Link to="/budget" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>add_card</i>&nbsp;&nbsp;&nbsp;Budget</Link></li>
+                                    <li className='py-1'><Link to="/borrow" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>attach_money</i>&nbsp;&nbsp;&nbsp;Borrow</Link></li>
                                 </ul>
                             </li>
 
@@ -38,10 +38,10 @@ const Navbar = () => {
                             <li className="nav-item dropdown px-1">
                                 <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Company</Link>
                                 <ul className="dropdown-menu border-0 shadow-sm">
-                                    <li className='py-1'><Link href="" className="dropdown-item">Blog</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item">Press</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item">Join our team</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item">About us</Link></li>
+                                    <li className='py-1'><Link to="/*" className="dropdown-item">Blog</Link></li>
+                                    <li className='py-1'><Link to="/*" className="dropdown-item">Press</Link></li>
+                                    <li className='py-1'><Link to="/*" className="dropdown-item">Join our team</Link></li>
+                                    <li className='py-1'><Link to="/*" className="dropdown-item">About us</Link></li>
                                 </ul>
                             </li>
 

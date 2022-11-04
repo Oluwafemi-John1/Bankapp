@@ -1,0 +1,36 @@
+@media screen and (min-width:992px) {
+    #errorimg {
+        width: 80%;
+    }
+    #errordiv {
+        transform: translateY(50px);
+    }
+    #errordiv h1 {
+        font-size: 55px;
+        text-shadow: -1px 1px #cacaca,
+        -2px 2px #cacaca,
+        -3px 3px #cacaca,
+        -4px 4px #cacaca,
+        -5px 5px #cacaca,
+        -6px 6px #cacaca,
+        -7px 7px #cacaca,
+        -8px 8px #cacaca,
+        -9px 9px #cacaca,
+        -10px 10px rgba(0,0,0,.2);
+    }
+    #errordiv p {
+        font-size: large;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:475px) {
+    #errordiv h1 {
+        text-shadow: -1px 1px #cacaca,
+        -2px 2px #cacaca,
+        -3px 3px #cacaca,
+        -4px 4px #cacaca,
+        -5px 5px rgba(0,0,0,.2);
+    
+    }
+}
