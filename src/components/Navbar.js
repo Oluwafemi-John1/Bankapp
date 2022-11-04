@@ -1,10 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/nova logo.png';
-import kudacard from '../assets/images/svgexport-3.svg';
-import spend from '../assets/images/svgexport-4.svg';
-import save from '../assets/images/svgexport-5.svg';
-import budget from '../assets/images/svgexport-6.svg';
-import borrow from '../assets/images/svgexport-7.svg';
+import logo from '../assets/images/nova logo2.png';
 import countrylogo from '../assets/images/logo.svg';
 import imagescam from '../assets/images/imagescam.png';
 import { Link } from 'react-router-dom';
@@ -13,10 +8,10 @@ import '../assets/css/Navbar.css';
 const Navbar = () => {
   return (
     <>
-        <div className="sticky-top">
+        <div className="sticky-top nav-sticky">
             <nav className="navbar navbar-expand-lg py-3 shadow-sm">
                 <div className="container-fluid">
-                    <a className="navbar-brand ms-lg-5" href="#"><img src={logo} width={90} alt="" className='imglogo'/></a>
+                    <Link className="navbar-brand ms-lg-5" to="/"><img src={logo} width={90} alt="" className='imglogo'/></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -27,11 +22,11 @@ const Navbar = () => {
                             <li className="nav-item dropdown px-1">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Features</a>
                                 <ul className="dropdown-menu border-0 shadow-sm">
-                                    <li className='py-1'><Link href="" className="dropdown-item"><img src={kudacard} width={25} alt="" />&nbsp;&nbsp;&nbsp;Nova Card</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item"><img src={spend} width={25} alt="" />&nbsp;&nbsp;&nbsp;Spend</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item"><img src={save} width={25} alt="" />&nbsp;&nbsp;&nbsp;Save</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item"><img src={budget} width={25} alt="" />&nbsp;&nbsp;&nbsp;Budget</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item"><img src={borrow} width={25} alt="" />&nbsp;&nbsp;&nbsp;Borrow</Link></li>
+                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>credit_card</i>&nbsp;&nbsp;&nbsp;Nova Card</Link></li>
+                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>payments</i>&nbsp;&nbsp;&nbsp;Spend</Link></li>
+                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>savings</i>&nbsp;&nbsp;&nbsp;Save</Link></li>
+                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>add_card</i>&nbsp;&nbsp;&nbsp;Budget</Link></li>
+                                    <li className='py-1'><Link href="" className="dropdown-item"><i className='material-icons' style={{transform:"translateY(7px)"}} width={25}>attach_money</i>&nbsp;&nbsp;&nbsp;Borrow</Link></li>
                                 </ul>
                             </li>
 

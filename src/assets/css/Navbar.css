@@ -6,7 +6,7 @@ nav {
 }
 
 .nav-item Link {
-    color: #40196D;
+    color: orangered;
 }
 
 .navbar-nav li:hover {
@@ -14,7 +14,7 @@ nav {
 }
 
 .navbar-nav li a{
-    color: #5C3B83;
+    color: orangered;
     font-weight: 600;
 }
 
@@ -32,16 +32,20 @@ nav {
 
     body {
         /* overflow-x: hidden; */
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
     }
 
-    #sticky-top {
-        width: 365px;
-        border: 2px dotted firebrick;
+    .nav-sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        right: 0;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.1) !important;
+        /* margin-bottom: 50px; */
 
     }
     #getKuda {
-        background-color: #5C3B83;
+        background-color: orangered;
         transition: 1s ease-in-out;
         width: 120px;
     }
@@ -52,7 +56,7 @@ nav {
 /* ============ only desktop view ============ */
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{  display:none; opacity: 0; visibility: visible; transition:.3s; margin-top:0;  }
-	.navbar .nav-item:hover .nav-link{ color: #40196D;  }
+	.navbar .nav-item:hover .nav-link{ color: orange;  }
 	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
 	.navbar .dropdown-menu.fade-up{ top:180%;  }
 	.navbar .nav-item:hover .dropdown-menu{display: block; transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
@@ -75,7 +79,7 @@ nav {
     }
 
     #getKuda {
-        background-color: #40196D;
+        background-color: orangered;
         transition: 1s ease-in-out;
     }
 
@@ -86,6 +90,11 @@ nav {
     #imagescam {
         transform: translate(-470px,-15px);
         transition: 10s ease-in-out;
+    }
+
+    .navbar-brand:hover {
+        transform: scale(1.15,1.15);
+        transition: .5s ease-in-out;
     }
 }		
 /* ============ desktop view .end// ============ */
