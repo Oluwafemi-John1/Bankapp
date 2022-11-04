@@ -4,6 +4,11 @@
     animation: nova 1.5s linear forwards;
 }
 
+#sectioncards {
+    animation: nova 1.5s linear forwards;
+
+}
+
 @keyframes nova {
     0% {
         opacity: 0;
@@ -73,6 +78,10 @@ p#freedom {
         margin-left: 0px;
     }
 
+    #sectioncards {
+        transform: translateY(30px);
+    }
+
     #freebank {
         font-size: 35px;
         line-height: 35.2px;
@@ -123,6 +132,12 @@ p#freedom {
             transform: translateX(0%);
         }
     }
+
+    .card {
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1) !important;
+        margin-left: 5px;
+        overflow-y: hidden !important;
+    }
 }
 
 
@@ -131,19 +146,23 @@ p#freedom {
         transform: translateY(35px);
         transition: 2s ease-in-out;
     }
+
+    #imagebank {
+        transform: translateY(60px);
+    }
 }
 
 /* <=========== Card Section ===========> */
-section#card {
-    height: 50vh;   
-}
-
 @media all and (min-width: 992px) {
     #cards {
         margin-left: 10%;
         margin-right: 0%;
     }
 
+    #cardss {
+        transform: translateX(400px);
+
+    }
     #imagebank {
         animation: move 1.5s linear backwards;
         position: relative;
