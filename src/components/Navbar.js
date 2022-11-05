@@ -49,10 +49,10 @@ const Navbar = () => {
                             <li className="nav-item dropdown px-1">
                                 <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Help</Link>
                                 <ul className="dropdown-menu border-0 shadow-sm">
-                                    <li className='py-1'><Link href="" className="dropdown-item">Get Help</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item">FAQs</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item">Security</Link></li>
-                                    <li className='py-1'><Link href="" className="dropdown-item">Contact us</Link></li>
+                                    <li className='py-1'><Link to="/*" className="dropdown-item">Get Help</Link></li>
+                                    <li className='py-1'><Link to="/*" className="dropdown-item">FAQs</Link></li>
+                                    <li className='py-1'><Link to="/*" className="dropdown-item">Security</Link></li>
+                                    <li className='py-1'><Link to="/*" className="dropdown-item">Contact us</Link></li>
                                 </ul>
                             </li>
                         </ul>
