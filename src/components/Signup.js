@@ -1,7 +1,15 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
+import signupimage from '../assets/images/Mobile login-pana.svg';
+import '../assets/css/Signup.css'
 
 const Signup = () => {
+    let novaStyle = {
+        textDecoration:"underline",
+        textDecorationColor:"#FF4500",
+        textDecorationStyle: "double"
+    }
   return (
     <>
     <Navbar/>
@@ -13,28 +21,32 @@ const Signup = () => {
                 </div>
 
                 <div className="border rounded mt-4 p-3 shadow-sm mb-3">
-                    <h4>Get a Nova account now</h4>
+                    <h4>Get a <span style={novaStyle}>Nova</span> account now</h4>
                     <p>To sign up, please type in a valid email address</p>
-                </div>
 
-                <div>
-                    <label htmlFor="full name" className='fw-bold' style={{color:"#FF4500"}} >Full Name:</label>
-                    <input type="text" className="form-control my-2" placeholder='firstname&nbsp;&nbsp;lastname'/>
+                    <div>
+                        <label htmlFor="full name" className='fw-bold' style={{color:"#FF4500"}} >Full Name:</label>
+                        <input type="text" className="form-control my-2" placeholder='firstname&nbsp;&nbsp;lastname'/>
+                    </div>
+                    <div>
+                        <label htmlFor="phone number" className='fw-bold' style={{color:"#FF4500"}} >Phone Number:</label>
+                        <input type="number" className="form-control my-2" placeholder='enter phone number'/>
+                    </div>
+                    <div>
+                        <label htmlFor="email address" className='fw-bold' style={{color:"#FF4500"}} >Email Address:</label>
+                        <input type="email" className="form-control my-2" placeholder='example@gmail.com'/>
+                    </div>
+                    <div>
+                        <label htmlFor="password" className='fw-bold' style={{color:"#FF4500"}} >Password:</label>
+                        <input type="password" className="form-control my-2" placeholder='&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;'/>
+                    </div>
+                    <p>Forgot password? <span style={{color:"#FF4500"}}>Reset it</span></p>
+                    <p>Already have an account? Sign in <Link to='/signin' className='fw-bold' style={{color:"#FF4500"}}>here</Link></p>
+                    <button className="btn my-2 p-2 text-light w-100" style={{backgroundColor:"#FF4500"}}>Create Account</button>
                 </div>
-                <div>
-                    <label htmlFor="phone number" className='fw-bold' style={{color:"#FF4500"}} >Phone Number:</label>
-                    <input type="number" className="form-control my-2" placeholder='enter phone number'/>
-                </div>
-                <div>
-                    <label htmlFor="email address" className='fw-bold' style={{color:"#FF4500"}} >Email Address:</label>
-                    <input type="email" className="form-control my-2" placeholder='example@gmail.com'/>
-                </div>
-                <div>
-                    <label htmlFor="password" className='fw-bold' style={{color:"#FF4500"}} >Password:</label>
-                    <input type="password" className="form-control my-2" placeholder='&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;'/>
-                </div>
-                <p>Forgot password? <span style={{color:"#FF4500"}}>Reset it</span></p>
-                <button className="btn my-2 p-2 text-light w-100" style={{backgroundColor:"#FF4500"}}>Create Account</button>
+            </div>
+            <div className="col-lg-5 mx-auto">
+                <img src={signupimage} width={600} alt="" className="img-fluid img-responsive" id='signupimage'/>
             </div>
         </div>
     </div>
