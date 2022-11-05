@@ -2,13 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/css/GetNova.css';
 import cbn from '../assets/images/cbn.svg';
-// import ndic from '../assets/images/NDIC.svg';
 import bank from '../assets/images/E-Wallet-pana.svg';
-import card1 from '../assets/images/svgexport-3.svg';
-import budget from '../assets/images/svgexport-6.svg';
-import equation from '../assets/images/svgexport-20.svg';
-import paynothing from '../assets/images/svgexport-4.svg'
-import save from '../assets/images/svgexport-5.svg'
 
 const GetNova = () => {
     let cardStyle = {
