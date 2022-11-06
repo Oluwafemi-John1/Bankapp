@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
 import signinimage from '../assets/images/Mobile login.gif';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
+import * as yup from 'yup'
 
 const Signin = () => {
+    const Navigate = useNavigate();
+    const [Error, setError] = useState("");
+
     let novaStyle = {
         textDecoration:"underline",
         textDecorationColor:"#FF4500",
@@ -20,7 +24,38 @@ const Signin = () => {
         initialValues:{
             email:"",
             password:""
-        }
+        },
+
+        onSubmit:(values) => {
+            let details = JSON.parse(localStorage.getItem("nova"));
+            if(values) {
+                for (const a of details) {
+                    let User = values;
+                    if (a["email"] === User.email && a["password"] === User.password) {
+                        localStorage.signInEmail = JSON.stringify(User.email);
+                        localStorage.users = JSON.stringify(a);
+                        // Navigate("/user")
+                    } else {
+                        let err = "User not found"
+                        setError(err)
+                    }
+                }
+            }
+        },
+
+        validationSchema:yup.object({
+            email:yup
+            .string()
+            .email("Must be a valid email")
+            .required("This field is required"),
+            password:yup
+            .string()
+            .matches(lower,"Must include lowercase letter")
+            .matches(upper,"Must include uppercase letter")
+            .matches(number,"Must include a number")
+            .matches(length,"Must not be less than 8 characters")
+            .required("This field is required")
+        })
     })
   return (
     <>
@@ -35,6 +70,9 @@ const Signin = () => {
                 <div className="border rounded mt-5 p-3 shadow-sm mb-3">
                     <h4>Sign in to your <span style={novaStyle}>Nova</span> account now</h4>
                     <p>To sign in, please type in your registered email address</p>
+                    <p>
+                        <b className="text-danger">{Error}</b>
+                    </p>
 
                     <form action="">
                         <label htmlFor="email address" className='fw-bold' style={{color:"#FF4500"}} >Email Address:</label>
