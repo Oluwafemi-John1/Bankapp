@@ -74,7 +74,7 @@ const Signin = () => {
                         <b className="text-danger">{Error}</b>
                     </p>
 
-                    <form action="">
+                    <form action="" onSubmit={formik.handleSubmit}>
                         <label htmlFor="email address" className='fw-bold' style={{color:"#FF4500"}} >Email Address:</label>
                         <input 
                             type="email"
