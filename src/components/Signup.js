@@ -42,7 +42,7 @@ const Signup = () => {
                 } else {
                     for (const a of allUser) {
                         let User = values;
-                        if (a["phone" && "email"] !== User.phone && User.email) {
+                        if (a["phone"] !== User.phone && a["email"] !== User.email) {
                             setallUser(allUser.push(values));
                             localStorage.setItem("nova", JSON.stringify(allUser));
                             Navigate('/signin');
