@@ -1,0 +1,48 @@
+#sectionCard {
+    height: 90vh;
+    transform: translateY(10px);
+    animation: nova 1.5s linear forwards;
+}
+
+#moneyapp {
+    font-size: 50px;
+    line-height: 55.2px;
+    color: orangered;
+    font-weight: 700;
+    margin: 50px 0px 15px 3px;
+    font-family: sans-serif;
+}
+
+p#saveSpend {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+@media only screen and (max-width:475px){
+    #sectionCard {
+        height: 130vh;
+        transform: translateY(50px);
+        /* border: 2px solid firebrick; */
+        width: 360px;
+        margin-left: 0px;
+    }
+    #divCard {
+        /* border: 2px solid red; */
+        height: 35vh;
+    }
+    #moneyapp {
+        font-size: 35px;
+        line-height: 35.2px;
+        color: orangered;
+        font-weight: 700;
+        margin: 0px;
+        font-family: sans-serif;
+        overflow-y: hidden;
+    }
+    p#saveSpend {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+}
