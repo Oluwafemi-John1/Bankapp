@@ -1,7 +1,8 @@
-import React from 'react'
-import Navbar from './Navbar'
-import '../assets/css/Cards.css'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Navbar from './Navbar';
+import '../assets/css/Cards.css';
+import { Link } from 'react-router-dom';
+import atm from '../assets/images/ATM machine.gif'
 
 const Cards = () => {
   return (
@@ -15,8 +16,8 @@ const Cards = () => {
                 <p className='p-3' id='saveSpend'>Save, spend, send and invest money across borders.</p>
                 <Link className="nav-link fs-5 text-center ms-lg-2 ms-4" to="/signup" id='getKudagetKuda'>Get Nova <span><i className="material-icons" id='mat' style={{transform:"translateY(7px)"}}>navigate_next</i></span></Link>
             </div>
-            <div className="col-lg-4 col-sm-12 border-primary">
-
+            <div className="col-lg-6 col-sm-12 border-primary" id='imgAtm'>
+                <img src={atm} alt="" width={500} className='img-fluid img-responsive' />
             </div>
         </div>
     </section>

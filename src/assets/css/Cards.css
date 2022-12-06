@@ -19,6 +19,29 @@ p#saveSpend {
     line-height: 30px;
 }
 
+@media only screen and (min-width:990px) {
+    #imgAtm {
+        margin-left: 50px;
+    }
+
+    #imgAtm {
+        animation: move 2s linear backwards;
+        position: relative;
+    }
+
+    @keyframes move {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+}
+
 @media only screen and (max-width:475px){
     #sectionCard {
         height: 130vh;
@@ -29,7 +52,7 @@ p#saveSpend {
     }
     #divCard {
         /* border: 2px solid red; */
-        height: 35vh;
+        height: 80vh;
     }
     #moneyapp {
         font-size: 35px;
