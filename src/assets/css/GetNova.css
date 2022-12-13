@@ -160,6 +160,10 @@ p#freedom {
         margin-left: 5px;
         overflow-y: hidden !important;
     }
+
+    #cards div, #cardss div {
+        overflow-y: hidden;
+    }
 }
 
 
