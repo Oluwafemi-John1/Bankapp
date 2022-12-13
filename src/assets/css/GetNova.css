@@ -1,19 +1,21 @@
-/* body {
-    height: 400vh;
-} */
-
-::-webkit-scrollbar {
-    width: 10px;
+@media only screen and (min-width:992px) {
+    /* body {
+        height: 400vh;
+    } */
+    
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #c7c3c3;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: orangered;
+    }
 }
 
-::-webkit-scrollbar-track {
-    background: #c7c3c3;
-}
-
-::-webkit-scrollbar-thumb {
-    /* background: #ba5f7d; */
-    background: orangered;
-}
 #sectionKuda {
     height: 90vh;
     transform: translateY(10px);
